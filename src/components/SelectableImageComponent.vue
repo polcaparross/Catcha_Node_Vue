@@ -15,6 +15,12 @@ export default{
             } else {
                 this.$emit('update:modelValue', false)
             }
+        },
+        modelValue(newVal){
+            if(newVal == false){
+                this.border = 'none'             
+            }
+
         }
 
     },
